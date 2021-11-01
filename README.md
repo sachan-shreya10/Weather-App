@@ -3,4 +3,4 @@
 A weather application built using HTML, CSS, JAVASCRIPT
 It is built using open weather API for fetching weather and geolocation information and has the functionality of searchable cities.
 
-#https://weather-app-by-shreya.netlify.app/
+## https://weather-app-by-shreya.netlify.app/
