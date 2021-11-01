@@ -5,7 +5,7 @@
 }
 body{
     height: 100px;
-    background-color:#FC766AFF;
+    background-color:rgb(80, 116, 170);
 }
 #search{
     display: flex;
@@ -13,6 +13,9 @@ body{
     align-items: center;
     margin-top: 100px;  
 }
+::placeholder { 
+    color:white;
+  }
 #temp{
     text-align: center;
 }
