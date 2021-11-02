@@ -30,22 +30,22 @@ window.addEventListener("load", () => {
                     climate.textContent = main;
                     tempvalue.textContent = Math.round(feels_like - 273);
 
-                    if (id < 300 && id > 200) {
+                    if (id >= 200 && id < 300) {
                         tempicon.src = "./icons/thunderstorm.png";
                     }
-                    else if (id < 400 && id > 300) {
+                    else if (id >= 300 && id < 400 ) {
                         tempicon.src = "./icons/cloud.png";
                     }
-                    else if (id < 600 && id > 500) {
+                    else if (id >= 500 && id < 600) {
                         tempicon.src = "./icons/rain.png";
                     }
-                    else if (id < 700 && id > 600) {
+                    else if (id >= 600 && id < 700) {
                         tempicon.src = "./icons/snow.png";
                     }
-                    else if (id < 800 && id > 700) {
+                    else if (id >= 700 && id < 800) {
                         tempicon.src = "./icons/cloud.png";
                     }
-                    if (id == 800) {
+                    else if (id >= 800) {
                         tempicon.src = "./icons/cloudy.png";
                     }
                 })
@@ -74,24 +74,24 @@ const getWeather = async (city) => {
         climate.textContent = main;
         tempvalue.textContent = Math.round(feels_like - 273);
 
-        if (id < 300 && id > 200) {
-            tempicon.src = "./icons/thunderstorm.png";
-        }
-        else if (id < 400 && id > 300) {
-            tempicon.src = "./icons/cloud.png";
-        }
-        else if (id < 600 && id > 500) {
-            tempicon.src = "./icons/rain.png";
-        }
-        else if (id < 700 && id > 600) {
-            tempicon.src = "./icons/snow.png";
-        }
-        else if (id < 800 && id > 700) {
-            tempicon.src = "./icons/cloud.png";
-        }
-        if (id == 800) {
-            tempicon.src = "./icons/cloudy.png";
-        }
+        if (id >= 200 && id < 300) {
+                        tempicon.src = "./icons/thunderstorm.png";
+                    }
+                    else if (id >= 300 && id < 400 ) {
+                        tempicon.src = "./icons/cloud.png";
+                    }
+                    else if (id >= 500 && id < 600) {
+                        tempicon.src = "./icons/rain.png";
+                    }
+                    else if (id >= 600 && id < 700) {
+                        tempicon.src = "./icons/snow.png";
+                    }
+                    else if (id >= 700 && id < 800) {
+                        tempicon.src = "./icons/cloud.png";
+                    }
+                    else if (id >= 800) {
+                        tempicon.src = "./icons/cloudy.png";
+                    }
     }
     catch (error) {
         alert('city not found');
